@@ -1,0 +1,15 @@
+name: Test workflow 
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: always sleep 90
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 90
